@@ -37,5 +37,6 @@ angular.module('starter.controllers', ['starter.services'])
         $scope.sessions = Session.query();
     })
 
-.controller('PlaylistCtrl', function($scope, $stateParams) {
-})
+    .controller('SessionCtrl', function($scope, $stateParams, Session) {
+        $scope.session = Session.get({sessionId: $stateParams.sessionId});
+    });
