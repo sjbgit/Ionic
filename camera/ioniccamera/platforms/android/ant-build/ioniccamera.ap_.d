@@ -45,7 +45,6 @@ C:\Users\Seth\Documents\GitHub\Ionic\camera\ioniccamera\platforms\android\assets
 C:\Users\Seth\Documents\GitHub\Ionic\camera\ioniccamera\platforms\android\assets\www\js\controllers.js \
 C:\Users\Seth\Documents\GitHub\Ionic\camera\ioniccamera\platforms\android\assets\www\js\services.js \
 C:\Users\Seth\Documents\GitHub\Ionic\camera\ioniccamera\platforms\android\assets\www\lib\ionic \
-C:\Users\Seth\Documents\GitHub\Ionic\camera\ioniccamera\platforms\android\assets\www\lib\ngCordova \
 C:\Users\Seth\Documents\GitHub\Ionic\camera\ioniccamera\platforms\android\assets\www\lib\ionic\css \
 C:\Users\Seth\Documents\GitHub\Ionic\camera\ioniccamera\platforms\android\assets\www\lib\ionic\fonts \
 C:\Users\Seth\Documents\GitHub\Ionic\camera\ioniccamera\platforms\android\assets\www\lib\ionic\js \
@@ -113,18 +112,10 @@ C:\Users\Seth\Documents\GitHub\Ionic\camera\ioniccamera\platforms\android\assets
 C:\Users\Seth\Documents\GitHub\Ionic\camera\ioniccamera\platforms\android\assets\www\lib\ionic\scss\ionicons\_ionicons-font.scss \
 C:\Users\Seth\Documents\GitHub\Ionic\camera\ioniccamera\platforms\android\assets\www\lib\ionic\scss\ionicons\_ionicons-icons.scss \
 C:\Users\Seth\Documents\GitHub\Ionic\camera\ioniccamera\platforms\android\assets\www\lib\ionic\scss\ionicons\_ionicons-variables.scss \
-C:\Users\Seth\Documents\GitHub\Ionic\camera\ioniccamera\platforms\android\assets\www\lib\ngCordova\dist \
-C:\Users\Seth\Documents\GitHub\Ionic\camera\ioniccamera\platforms\android\assets\www\lib\ngCordova\dist\ng-cordova.js \
 C:\Users\Seth\Documents\GitHub\Ionic\camera\ioniccamera\platforms\android\assets\www\plugins\com.ionic.keyboard \
-C:\Users\Seth\Documents\GitHub\Ionic\camera\ioniccamera\platforms\android\assets\www\plugins\org.apache.cordova.camera \
 C:\Users\Seth\Documents\GitHub\Ionic\camera\ioniccamera\platforms\android\assets\www\plugins\org.apache.cordova.device \
 C:\Users\Seth\Documents\GitHub\Ionic\camera\ioniccamera\platforms\android\assets\www\plugins\com.ionic.keyboard\www \
 C:\Users\Seth\Documents\GitHub\Ionic\camera\ioniccamera\platforms\android\assets\www\plugins\com.ionic.keyboard\www\keyboard.js \
-C:\Users\Seth\Documents\GitHub\Ionic\camera\ioniccamera\platforms\android\assets\www\plugins\org.apache.cordova.camera\www \
-C:\Users\Seth\Documents\GitHub\Ionic\camera\ioniccamera\platforms\android\assets\www\plugins\org.apache.cordova.camera\www\Camera.js \
-C:\Users\Seth\Documents\GitHub\Ionic\camera\ioniccamera\platforms\android\assets\www\plugins\org.apache.cordova.camera\www\CameraConstants.js \
-C:\Users\Seth\Documents\GitHub\Ionic\camera\ioniccamera\platforms\android\assets\www\plugins\org.apache.cordova.camera\www\CameraPopoverHandle.js \
-C:\Users\Seth\Documents\GitHub\Ionic\camera\ioniccamera\platforms\android\assets\www\plugins\org.apache.cordova.camera\www\CameraPopoverOptions.js \
 C:\Users\Seth\Documents\GitHub\Ionic\camera\ioniccamera\platforms\android\assets\www\plugins\org.apache.cordova.device\www \
 C:\Users\Seth\Documents\GitHub\Ionic\camera\ioniccamera\platforms\android\assets\www\plugins\org.apache.cordova.device\www\device.js \
 C:\Users\Seth\Documents\GitHub\Ionic\camera\ioniccamera\platforms\android\assets\www\templates\friend-detail.html \
