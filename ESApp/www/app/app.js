@@ -22,10 +22,17 @@ angular.module('eliteApp', ['ionic'])
       //abstract: true,
       templateUrl: "app/home/home.html" //,
       //controller: 'AppCtrl'
-    //})
+    })
 
+    .state('app', {
+    	url: "/app",
+    	templateUrl: "app/layout/menu-layout.html"
+
+    	})
+
+    ;
     
-    });
+    //});
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/home');
+  $urlRouterProvider.otherwise('/app');
 });
