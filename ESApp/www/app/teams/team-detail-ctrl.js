@@ -7,6 +7,9 @@
         var vm = this;
         
         console.log("$stateParams", $stateParams);
+        console.log("$stateParams", $stateParams.id);
+
+        vm.id = $stateParams.id;
 
     };
 })();
