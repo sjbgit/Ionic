@@ -1,14 +1,21 @@
 (function() {
 	'use strict';
 
-	angular.module('eliteApp').controller('LeaguesCtrl', ['eliteApi', LeaguesCtrl]);
+	angular.module('eliteApp').controller('LeaguesCtrl', ['$state', 'eliteApi', LeaguesCtrl]);
 
-	function LeaguesCtrl(eliteApi) {
+	function LeaguesCtrl($state, eliteApi) {
 		var vm = this;
 		var leagues = eliteApi.getLeagues();
-		var leagueData = eliteApi.getLeagueData();
+		//var leagueData = eliteApi.getLeagueData();
 
-		console.log(leagues, leagueData);
+		vm.leagues = leagues;
+
+		//console.log(leagues, leagueData);
+
+		vm.selectLeague = function(leagueId) {
+			//todo: select correct league
+			$state.go("app.teams");
+		};
 
 	};
 
