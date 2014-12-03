@@ -1,9 +1,9 @@
 (function () {
     'use strict';
 
-    angular.module('eliteApp').factory('eliteApi', ['$http', '$q', eliteApi]);
+    angular.module('eliteApp').factory('eliteApi', ['$http', '$q', '$ionicLoading', '$timeout', eliteApi]);
 
-    function eliteApi($http, $q) {
+    function eliteApi($http, $q, $ionicLoading, $timeout) {
         
     	var currentLeagueId;
 
@@ -30,15 +30,22 @@
 
         function getLeagueData(){
         	var deferred = $q.defer();
+
+        	$ionicLoading.show({ template: "Loading Data..."});
             $http.get("http://elite-schedule.net/api/leagueData/" + currentLeagueId)
             	.success(function(data, status){
             		console.log('Received schedule data via http', data, status);
             		//callback(data);
-            		deferred.resolve(data);
+            		$timeout(function() {
+            			deferred.resolve(data);
+            			$ionicLoading.hide();
+            		}, 3000);
+            		
             	})
             	.error(function() {
             		console.log("Error in getLeagueData");
             		deferred.reject(data);
+            		$ionicLoading.hide();
             	});
             return deferred.promise;
         };
