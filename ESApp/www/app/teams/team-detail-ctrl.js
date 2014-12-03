@@ -1,9 +1,9 @@
 (function () {
     'use strict';
 
-    angular.module('eliteApp').controller('teamDetailCtrl', ['$stateParams', 'eliteApi', teamDetailCtrl]);
+    angular.module('eliteApp').controller('teamDetailCtrl', ['$ionicPopup', '$stateParams', 'eliteApi', teamDetailCtrl]);
 
-    function teamDetailCtrl($stateParams, eliteApi) {
+    function teamDetailCtrl($ionicPopup, $stateParams, eliteApi) {
         var vm = this;
         
         //console.log("$stateParams", $stateParams);
