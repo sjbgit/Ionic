@@ -1,9 +1,9 @@
 (function () {
     'use strict';
 
-    angular.module('eliteApp').factory('eliteApi', ['$http', eliteApi]);
+    angular.module('eliteApp').factory('eliteApi', ['$http', '$q', eliteApi]);
 
-    function eliteApi($http) {
+    function eliteApi($http, $q) {
         
     	var currentLeagueId;
 
@@ -12,23 +12,35 @@
 
         //console.log(leagues);
         
-        function getLeagues(callback){
+        function getLeagues(){
+        	var deferred = $q.defer();
             $http.get("http://elite-schedule.net/api/leagueData")
             	.success(function(data){
-            		callback(data);
+            		//callback(data);
+            		deferred.resolve(data);
+            	})
+            	.error(function() {
+            		console.log("Error in getLeagues");
+            		deferred.reject(data);
             	});
+
+           	return deferred.promise;
             //return leagues;
         }
 
-        function getLeagueData(callback){
+        function getLeagueData(){
+        	var deferred = $q.defer();
             $http.get("http://elite-schedule.net/api/leagueData/" + currentLeagueId)
             	.success(function(data, status){
             		console.log('Received schedule data via http', data, status);
-            		callback(data);
+            		//callback(data);
+            		deferred.resolve(data);
             	})
             	.error(function() {
             		console.log("Error in getLeagueData");
+            		deferred.reject(data);
             	});
+            return deferred.promise;
         };
 
         function setLeagueId(leagueId) {
