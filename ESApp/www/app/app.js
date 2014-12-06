@@ -118,6 +118,6 @@ angular.module('eliteApp', ['ionic', 'angular-data.DSCacheFactory'])
     
     //});
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/app/teams');
-  //$urlRouterProvider.otherwise('/home/leagues');
+  //$urlRouterProvider.otherwise('/app/teams');
+  $urlRouterProvider.otherwise('/home/leagues');
 });
