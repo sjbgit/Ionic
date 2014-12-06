@@ -51,7 +51,9 @@
 
         });
 
-        vm.following = false;
+        //vm.following = false;
+
+        vm.following = myTeamsService.isFollowingTeam(vm.teamId.toString());
 
         vm.toggleFollow = function(){
 

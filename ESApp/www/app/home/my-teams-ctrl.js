@@ -3,7 +3,7 @@
 
 	angular.module('eliteApp').controller('MyTeamsCtrl', ['$state', 'myTeamsService', 'eliteApi', myTeamsCtrl]);
 
-	function myTeamsCtrl($state, myTeamsService, eliteApp) {
+	function myTeamsCtrl($state, myTeamsService, eliteApi) {
 		var vm = this;
 
 		vm.myTeams = myTeamsService.getFollowedTeams();
