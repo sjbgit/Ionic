@@ -1,4 +1,4 @@
-angular.module('eliteApp', ['ionic', 'angular-data.DSCacheFactory', 'uiGmapgoogle-maps'])
+angular.module('eliteApp', ['ionic', 'angular-data.DSCacheFactory', 'uiGmapgoogle-maps', 'eliteApp.directives'])
 
 .run(function($ionicPlatform, DSCacheFactory) {
   $ionicPlatform.ready(function() {
@@ -116,6 +116,28 @@ angular.module('eliteApp', ['ionic', 'angular-data.DSCacheFactory', 'uiGmapgoogl
 
 
 	})
+/*
+	.state('app.test-location', {
+    	url: '/test-location',
+    	views: {
+    		'mainContent': {
+    			templateUrl: "app/locations/test-location.html"
+    		}
+    	}
+
+
+
+	})
+*/
+
+	.state('app.test-location', {
+      url: "/test-location",
+      views: {
+        'mainContent': {
+          templateUrl: "app/locations/test-location.html",
+        }
+      }
+    })
 
     .state('app.rules', {
       url: "/rules",
