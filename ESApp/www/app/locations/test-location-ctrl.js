@@ -9,11 +9,15 @@
 
 		vm.info = 'test';
 
+		vm.map = { center: { latitude: 45, longitude: -73 }, zoom: 8 };
+
+		/*
+
 		vm.mapCreated = function(map) {
     		vm.map = map;
   		};
 
-		
+		*/
   
 	};
 
