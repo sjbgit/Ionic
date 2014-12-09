@@ -8,7 +8,7 @@
 	function LocationMapCtrl($stateParams) {
 		var vm = this;
 
-		vm.locationId = Number($stateParams.ic);
+		vm.locationId = Number($stateParams.id); 
 
 
 		vm.map = { center: { latitude: 45, longitude: -73 }, zoom: 8 };
