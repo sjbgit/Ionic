@@ -4,10 +4,18 @@
 
 		
 
-		<map></map> 
+		<map on-create="vm.mapCreated(map)"></map> 
  
 	</ion-content>
-</ion-view>
+
+<ion-footer-bar class="bar-stable">
+      <a ng-click="vm.centerOnMe()" class="button button-icon icon ion-navigate">Center</a>
+ </ion-footer-bar>
+
+</ion-view> 
+
+
+
 
 
 <!--
