@@ -18,9 +18,23 @@
         	return $http.get(urlBase + '/log');
     	};
 
+    	dataFactory.resource = function() {
+    		return $resource(urlBase);
 
+    	};
+
+    	/*
+    	dataFactory .resource = $resource(urlBase + '/:id', {
+            id: '@_id'
+        }, { //parameters default
+            update: {
+                method: 'PUT'
+            }
+        });
+
+		*/
 		return {
-			dataFactory: dataFactory
+			dataFactory: dataFactory			
 			//resource: $resource('http://localhost:8080/api/running')
 		};
 
@@ -34,6 +48,8 @@
 
 
 })(); 
+
+
 
 
 /*

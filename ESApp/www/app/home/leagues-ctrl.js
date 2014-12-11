@@ -19,6 +19,7 @@
 
 		vm.selectLeague = function(leagueId) {
 
+
 			eliteApi.setLeagueId(leagueId);
 			//todo: select correct league
 			$state.go("app.teams");

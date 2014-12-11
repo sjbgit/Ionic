@@ -9,7 +9,17 @@
 
 		vm.log = [];
 
+		vm.x = dataService.dataFactory.resource;
+/*
+		vm.x = dataService.dataFactory.resource.get({ id: $scope.id }, function() {
+  			console.log('in get');
+  			// $scope.entry is fetched from server and is an instance of Entry
+  			//$scope.entry.data = 'something else';
+  			//$scope.entry.$update(function() {
+    //updated in the backend
+  		});
 
+*/
 		var result = dataService.dataFactory.getRunning()
 			.success(function(data, status, headers, config) {
       			console.log('success: ' + data);

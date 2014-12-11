@@ -149,6 +149,15 @@ angular.module('eliteApp', ['ionic', 'angular-data.DSCacheFactory', 'uiGmapgoogl
       }
     })
 
+    .state('app.loc', {
+      url: "/loc/:id",
+      views: {
+        'mainContent': {
+          templateUrl: "app/locations/test-location.html",
+        }
+      }
+    })
+
     .state('app.rules', {
       url: "/rules",
       views: {

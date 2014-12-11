@@ -2,16 +2,22 @@
 
 	'use strict';
 
-	angular.module('eliteApp').controller('LocationMapCtrl', ['$stateParams', LocationMapCtrl]);
+	angular.module('eliteApp').controller('LocationMapCtrl', ['$stateParams', 'eliteApi', LocationMapCtrl]);
 
 
-	function LocationMapCtrl($stateParams) {
+	function LocationMapCtrl($stateParams, eliteApi) {
 		var vm = this;
 
 		vm.locationId = Number($stateParams.id); 
 
 
 		vm.map = { center: { latitude: 45, longitude: -73 }, zoom: 8 };
+
+		vm.marker = {};
+
+
+		
+
 
 		/*
 		vm.map = {

@@ -5,13 +5,23 @@
 				{{location.name}}
 
 
+				<ion-item nav-clear menu-close ui-sref="app.test-location">Test Location</ion-item>
+
+				<div class="buttons">
+					<a class="button button-light" ng-href="#/app/loc/{{location.id}}">
+						Loc: {{location.id}}
+					</a>
+
+				</div>
+
+<!--
 				<div class="buttons">
 					<a class="button button-light" ng-href="#/app/location-map/{{location.id}}">
 						<i class="icon ion-ios7-location"></i>
 					</a>
 
 				</div>
-
+-->
 			</div>
 		</div>
 	</ion-content>
