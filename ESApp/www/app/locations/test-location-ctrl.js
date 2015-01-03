@@ -9,11 +9,16 @@
 
     //mapService
 
+
+
     var mapOptions = {
           center: new google.maps.LatLng(43.005416, -88.221413), //(41.881832, -87.623177), //center: new google.maps.LatLng(20.8861, 156.6747), //43.07493, -89.381388),
           zoom: 16,
           mapTypeId: google.maps.MapTypeId.ROADMAP
         };
+
+
+    vm.mapOptions = mapOptions;
 
     mapService.mapOptions = mapOptions;
 
