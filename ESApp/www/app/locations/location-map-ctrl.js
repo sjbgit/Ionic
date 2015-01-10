@@ -10,6 +10,10 @@
 
 		vm.locationId = Number($stateParams.id); 
 
+		vm.updateMap = function() {
+			console.log('updated map');
+		};
+
 
 		vm.map = {
             center: {

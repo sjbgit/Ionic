@@ -8,6 +8,11 @@
 
 		var options = {};
 
+        var notify = function(info)  {
+            console.log(info);
+        };
+
+
     	/*
     	dataFactory .resource = $resource(urlBase + '/:id', {
             id: '@_id'
@@ -19,7 +24,8 @@
 
 		*/
 		return {
-			mapOptions: options			
+			mapOptions: options,
+            notify: notify			
 			//resource: $resource('http://localhost:8080/api/running')
 		};
 
